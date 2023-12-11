@@ -39,12 +39,15 @@ body {
 
 .search-div {
   display: flex;
+  flex-wrap: wrap;
   gap: 20px;
 }
 
 .topbar {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
   align-items: center;
 }
 
@@ -102,6 +105,12 @@ input[type="search"] {
   gap: 30px;
 }
 
+@media (max-width: 1230px) {
+  .weather-info{
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+}
+
 .flex {
   display: flex;
 }
@@ -136,6 +145,19 @@ input[type="search"] {
   gap: 5px;
   justify-content: space-between;
   margin-top: 30px;
+}
+
+@media (max-width: 640px) {
+
+  .past-hrs{
+    overflow: auto;
+  }
+
+  input[type="search"] {
+    width: 100%;
+
+  }
+  
 }
 
 
