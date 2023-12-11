@@ -79,6 +79,10 @@ input[type="search"] {
   align-items: center;
 }
 
+.w-full{
+  width: 100%;
+}
+
 .location-details {
   display: flex;
   flex-direction: column;
@@ -149,13 +153,16 @@ input[type="search"] {
 
 @media (max-width: 640px) {
 
+  .search-div{
+    width: 100%;
+  }
+
   .past-hrs{
     overflow: auto;
   }
 
   input[type="search"] {
     width: 100%;
-
   }
   
 }

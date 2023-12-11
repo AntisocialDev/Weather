@@ -92,9 +92,9 @@ export const TopBar = (props: TopBarProps) => {
         <h2>{selectedCity}</h2>
         <p>{dateNow}</p>
       </div>
-      <div>
+      
         <form className="search-div">
-          <div>
+          <div className="w-full">
             <input
               type="search"
               placeholder="Search City"
@@ -116,12 +116,12 @@ export const TopBar = (props: TopBarProps) => {
                 ))}
             </div>
           </div>
-          <select disabled className="lang-select" value={"eng"}>
+          {/* <select disabled className="lang-select" value={"eng"}>
             <option value={"eng"}>Eng</option>
-          </select>
+          </select> */}
         </form>
       </div>
-    </div>
+   
   );
 };
 
